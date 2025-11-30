@@ -417,7 +417,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) > 1 and sys.argv[1] == "api":
         # Run API mode
-        port = int(os.environ.get("PORT", os.environ.get("API_PORT", 8002)))
+        port = int(os.environ.get("PORT", os.environ.get("API_PORT", 8081)))
         host = os.environ.get("API_HOST", "0.0.0.0")
 
         print("\n" + "=" * 70)
